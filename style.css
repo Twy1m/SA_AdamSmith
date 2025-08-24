@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
 
 *{
     margin: 0px;
@@ -6,37 +8,51 @@
 
 }
 /* Index */
+
 body{
-    background-image: url(IMGS/Capa.jpg);
     height: 844px;
     width: 390px;
     display: flex;
     flex-direction: column;
 }
 
-h2{
-    font-family: UnifrakturMaguntia;
-    margin-top: 40px;
+body .capa{
+    background-image: url(IMGS/Capa\ Revista.jpg);
+}
+header h1{
+    margin-top: 8px;
     text-align: center;
+    font-family: UnifrakturMaguntia;
+    font-size: 2rem;
+    color: black;
 }
 main{
-    flex: 1;
+    flex: auto;
 }
-
-h1 {
-    font-family: dm-serif-text-regular;
-    display: flex;
-    flex-direction: column;          
-    justify-content: center;         
-    align-items: flex-start;
+nav{
+    display: flex;                
+    justify-content: flex-end;    
+    align-items: flex-end;
 }
-
-footer{
+h3{
     text-align: center;
-    color: white;  
+    font-family: "Playfair Display"
+}
+h4{
+    font-family: "Radley"
+}
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    margin-bottom: 16px;
+    text-align: center;
 }
 
 footer small{
     background-color: black;
-    border-radius: 0%;
+    font-family: UnifrakturMaguntia ;
+    color: white;
 }
