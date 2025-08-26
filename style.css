@@ -14,6 +14,8 @@ body{
     width: 390px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
 }
 .capa{
     background-image: url(IMGS/Capa_Revista_Stencil.jpg);
@@ -22,6 +24,9 @@ body{
 /* Main ocupar a pagina toda */
 main{
     flex: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 
 /* Local e data */
@@ -36,11 +41,13 @@ header h1{
 /* O que vai ter na pagina*/
 h3{
     text-align: center;
-    font-family: "Playfair Display"
+    font-family: "Playfair Display";
+    font-size: 18px;
 }
 /* Texto base da pagina */
 h4{
-    font-family: "Radley"
+    font-size: 15px;
+    font-family: "Radley";
 }
 
 /* Título da reportagem */
@@ -49,23 +56,57 @@ text-align: center;
 font-family: "Cormorant";
 font-size: 2rem;
 }
+/* Subtitulo */
 h6{
 font-family: "Cormorant";
 font-size: 1.25rem;
 }
 
+button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+/* Animação do botão */
 
+}button:hover, button .btn-capa:hover {
+    background-color: #444; 
+    transform: scale(1.05);
+}
+/* efeito de clique */
+button:active {
+    transform: scale(0.95); 
+}
+
+/* texto do botão */
+button a{
+    color: white;
+    text-decoration: none;
+    font-family: "Cormorant";
+    font-size: 18px;
+}
+/* botão da capa */
 .btn-capa{
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 750px auto;
+    border-color: black;
 }
 
 .btn-capa a{
-    text-decoration: none;
+    text-decoration:none;
     color: black;
 }
+
+nav{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 10px 20px;
+}
+
 
 footer{
     position: fixed;
@@ -78,6 +119,6 @@ footer{
 
 footer small{
     background-color: black;
-    font-family: UnifrakturMaguntia ;
+    font-family: "UnifrakturMaguntia";
     color: white;
 }
