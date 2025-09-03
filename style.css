@@ -2,64 +2,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Radley:ital@0;1&display=swap');
-/* #fefae0 */ 
-*{
+
+/* #fefae0 */
+* {
     margin: 0px;
     padding: 0px;
 
 }
 
-body{
+body {
     height: 844px;
     width: 390px;
     display: flex;
     flex-direction: column;
     /* overflow: hidden; */
-    height: 100vh;
 }
-.capa{
+
+.capa {
     background-image: url(IMGS/Capa_Revista_Stencil.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Main ocupar a pagina toda */
-main{
+main {
     flex: auto;
-    margin-left: 10px;
-    margin-right: 10px;
-
 }
 
-button{
+button {
     background-color: black;
     color: white;
     cursor: pointer;
     border-radius: 8px;
-    
-/* Animação do botão */
-}button:hover, button .btn-capa:hover {
-    background-color: #444; 
+
+    /* Animação do botão */
+}
+
+button:hover,
+button .btn-capa:hover {
+    background-color: #444;
     transform: scale(1.05);
 }
+
 /* efeito de clique */
 button:active {
-    transform: scale(0.95); 
+    transform: scale(0.95);
 }
 
 /* texto do botão */
-button a{
+button a {
     color: white;
     text-decoration: none;
     font-family: "Cormorant";
     font-size: 18px;
 }
+
 /* botão da capa */
-.btn-capa-container{
+.btn-capa-container {
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-.btn-capa{
+
+.btn-capa {
     background-color: white;
     display: flex;
     justify-content: center;
@@ -70,19 +76,20 @@ button a{
     width: 100px;
 }
 
-.btn-capa a{
-    text-decoration:none;
+.btn-capa a {
+    text-decoration: none;
     color: black;
 }
 
-nav{
+nav {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     margin: 10px 20px;
 }
+
 /* Local e data */
-header h1{
+header h1 {
     margin-top: 8px;
     text-align: center;
     font-family: UnifrakturMaguntia;
@@ -91,30 +98,39 @@ header h1{
 }
 
 /* O que vai ter na pagina*/
-h3{
+h3 {
     text-align: center;
     font-family: "Playfair Display";
     font-size: 18px;
 }
+
 /* Texto base da pagina */
-h4{
+h4 {
     font-size: 15px;
     font-family: "Radley";
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
 }
 
 /* Título da reportagem */
-h5{
-text-align: center;
-font-family: "Cormorant";
-font-size: 2rem;
-}
-/* Subtitulo */
-h6{
-font-family: "Cormorant";
-font-size: 1.25rem;
+h5 {
+    text-align: center;
+    font-family: "Cormorant";
+    font-size: 2rem;
+
+
 }
 
-.audio-container{
+/* Subtitulo */
+h6 {
+    font-family: "Cormorant";
+    font-size: 1.25rem;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.audio-container {
     margin: 16px auto;
     display: flex;
     justify-content: center;
@@ -128,7 +144,7 @@ font-size: 1.25rem;
 }
 
 .img-container img {
-    width: 180px;   
+    width: 180px;
     height: auto;
     border-radius: 6px;
 }
@@ -136,12 +152,12 @@ font-size: 1.25rem;
 .img-row {
     display: flex;
     justify-content: center;
-    gap: 20px; 
+    gap: 20px;
     margin: 10px 0;
 }
 
 .img-row img {
-    width: 45%;   
+    width: 45%;
     height: auto;
     border-radius: 6px;
 }
@@ -154,24 +170,26 @@ font-size: 1.25rem;
 }
 
 .video-container iframe {
-    width: 300px;   
-    height: 170px;  
+    width: 300px;
+    height: 170px;
     border-radius: 6px;
 }
 
-.maps-container, .img-container2{
+.maps-container,
+.img-container2 {
     display: flex;
     justify-content: center;
     margin: 15px 0;
 }
 
-.maps-container iframe, .img-container2 img{
-    width: 300px;   
-    height: 170px;  
+.maps-container iframe,
+.img-container2 img {
+    width: 300px;
+    height: 170px;
     border-radius: 6px;
 }
 
-footer{
+footer {
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -180,7 +198,7 @@ footer{
     text-align: center;
 }
 
-footer small{
+footer small {
     background-color: black;
     font-family: "UnifrakturMaguntia";
     color: white;
