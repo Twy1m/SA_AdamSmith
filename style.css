@@ -53,12 +53,18 @@ button a{
     font-size: 18px;
 }
 /* botão da capa */
+.btn-capa-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 .btn-capa{
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 700px auto;
+    margin-top: 700px;
     border-color: black;
     height: 60px;
     width: 100px;
